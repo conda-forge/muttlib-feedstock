@@ -51,7 +51,8 @@ about:
   home: https://github.com/MuttData/muttlib
   summary: Collection of helper modules by Mutt Data.
   doc_url: https://mutt_data.gitlab.io/muttlib/
-  license: MIT
+  # license packaged in manually for now; added PR upstream
+  license: Apache-2.0
   license_file: LICENCE
 
 extra:
