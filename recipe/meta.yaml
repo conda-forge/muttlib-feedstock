@@ -43,13 +43,14 @@ test:
   imports:
     - muttlib
     - muttlib.dbconn
+    - muttlib.plotting
   commands:
     - pip check
   requires:
     - pip
 
 about:
-  home: https://github.com/MuttData/muttlib
+  home: https://gitlab.com/mutt_data/muttlib/
   summary: Collection of helper modules by Mutt Data.
   doc_url: https://mutt_data.gitlab.io/muttlib/
   # license packaged in manually for now; added PR upstream
