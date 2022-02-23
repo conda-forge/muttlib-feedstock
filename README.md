@@ -1,7 +1,7 @@
 About muttlib
 =============
 
-Home: https://github.com/MuttData/muttlib
+Home: https://gitlab.com/mutt_data/muttlib/
 
 Package license: Apache-2.0
 
