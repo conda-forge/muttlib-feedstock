@@ -22,7 +22,7 @@ requirements:
     - python >=3.6,<3.10
   run:
     - deprecated >=1.2.13
-    - ipython >=7.29.0
+    - ipython >=7.29.0,<8.0.0
     - jinja2 >=2.11.3,<3.1.0
     - jinjasql >=0.1.8
     - matplotlib-base >=3.5.0
