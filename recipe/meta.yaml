@@ -1,5 +1,5 @@
 {% set name = "muttlib" %}
-{% set version = "1.4.16" %}
+{% set version = "1.4.17" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/muttlib-{{ version }}.tar.gz
-  sha256: 4298d7c5789891600053ebae87c311a7af535b65096fde2b6f2215413c8eff13
+  sha256: 43f258a3a0d8978c21c2ac156b85a04134d86558d039524bcb3312eeded90ddd
 
 build:
   number: 0
