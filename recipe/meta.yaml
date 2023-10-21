@@ -41,6 +41,7 @@ requirements:
     - ujson >=5.4.0
     - pyjwt >=2.4.0
     - lxml >=4.9.1
+    - trino-python-client ==0.320.0
 
 test:
   imports:
