@@ -1,5 +1,5 @@
 {% set name = "muttlib" %}
-{% set version = "1.4.23" %}
+{% set version = "1.4.27" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/muttlib-{{ version }}.tar.gz
-  sha256: 9d83b76068c007dd0f960888ea67c04693c63e85588ddbbb58ab0c1cc734e660
+  sha256: 770226cfba9a96124c56de5f254777229bbf395c47856d7fd59051a979dc8903
 
 build:
   number: 0
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - poetry-core ==1.7.0
     - python >=3.8,<3.11
   run:
     - python >=3.8,<3.11
