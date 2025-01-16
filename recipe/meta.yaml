@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/muttlib-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/muttlib-{{ version }}.tar.gz
   sha256: 770226cfba9a96124c56de5f254777229bbf395c47856d7fd59051a979dc8903
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,9 +19,9 @@ requirements:
   host:
     - pip
     - poetry-core ==1.7.0
-    - python >=3.8,<3.11
+    - python {{ python_min }}
   run:
-    - python >=3.8,<3.11
+    - python >={{ python_min }},<3.11
     - deprecated >=1.2.13,<2.0.0
     - pandas >=1.0.0
     - progressbar2 >=3.55.0,<4.0.0
@@ -52,6 +52,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/mutt_data/muttlib/
